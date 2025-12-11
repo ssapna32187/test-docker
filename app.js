@@ -7,6 +7,11 @@ app.get('/', (req, res) => {
   res.send('Hello from Node.js in a Docker container!');
 });
 
+// Basic route
+app.get('/my-page', (req, res) => {
+  res.send('this is my page');
+});
+
 // Start server with friendly logs
 app.listen(port, () => {
   console.log('-----------------------------------------');
