@@ -15,6 +15,9 @@ app.listen(port, () => {
   console.log('----------------------------------------------');
 });
 
+console.log("we are in dev branch");
+
+
 // Optional: Handle unexpected errors
 process.on('uncaughtException', (err) => {
   console.error('❌ Uncaught Exception:', err);
